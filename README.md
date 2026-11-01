@@ -47,4 +47,4 @@ grep -rl "ret2libc" --include=README.md .
 
 | Event | Date | Solved | Writeups |
 |---|---|---|---|
-| [The Great CTF Debrief 2026](2026-the-great-ctf-debrief/) | 2026 | 64 / 65 | 65 challenges across 14 series/categories |
+| [CyberWeek 2026](2026-cyberweek/) | 2026 | 64 / 65 | 65 challenges across 14 series/categories |

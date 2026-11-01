@@ -7,7 +7,7 @@ Two commands:
   python ctf.py new <event-folder>/<challenge-folder>
         Create a new challenge writeup from the template, ready to fill in.
         Example:
-          python ctf.py new 2026-the-great-ctf-debrief/web/my-new-chall
+          python ctf.py new 2026-cyberweek/web/my-new-chall
 
   python ctf.py            (or:  python ctf.py index)
         Rebuild every index/table automatically from the writeups.

@@ -50,4 +50,4 @@ git push
 - Keep rough notes in a `notes.md` next to your writeup while you work; tidy it into the README after.
 - `git pull` before you `push`. If two people added different challenges and git complains, it's almost always a clean auto-merge; if a conflict is in an index table, just run `python ctf.py` again and it regenerates correctly.
 
-That's it. If in doubt, open any existing writeup in `2026-the-great-ctf-debrief/` and copy its shape.
+That's it. If in doubt, open any existing writeup in `2026-cyberweek/` and copy its shape.
