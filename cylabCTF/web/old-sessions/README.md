@@ -6,7 +6,7 @@ category: web
 difficulty: easy
 points: 0
 status: solved
-solved_with:solo
+solved_with: solo
 author: "David Gaviria"
 date: 2026-11-03
 flag: "[FLAG HIDDEN]"
