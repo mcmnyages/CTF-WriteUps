@@ -6,8 +6,8 @@ category: web
 difficulty: easy
 points: 100
 status: solved
-solved_with: team
-author: "Silas"
+solved_with: solo
+author: "Nana Ama Atombo-Sackey & Sabine Gisagara"
 date: 2026-03-31
 flag: "[FLAG HIDDEN]"
 tags: [burpsuite, 2fa, web]
