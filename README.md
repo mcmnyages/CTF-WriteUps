@@ -36,6 +36,23 @@ git add -A && git commit -m "add my-challenge writeup" && git push
 
 That's the whole routine. `python ctf.py` with no arguments is safe to run anytime — it just refreshes the tables.
 
+## 🔒 Live CTFs — hiding flags
+
+Some events are still **running** (e.g. CyLab Academy challenges). Publishing their flags spoils them for others and usually breaks the platform's rules, so this repo hides them:
+
+```bash
+python ctf.py live cylabCTF        # mark an event as live (creates cylabCTF/LIVE.md)
+python ctf.py                      # hides every flag in live events + rebuilds tables
+python ctf.py check                # scan for leaked live flags (exit 1 if any)
+python ctf.py install-hook         # run `check` automatically before every commit
+python ctf.py reveal cylabCTF      # event over? put the real flags back
+```
+
+- Write the **real flag** in your writeup like normal. `python ctf.py` moves it into `.flags.local.json` (git-ignored, only on your machine) and replaces it with `[FLAG HIDDEN]`.
+- Index tables show `🔒 hidden (live CTF)` for those challenges.
+- One challenge can override its event with `live: true` / `live: false` in its frontmatter.
+- Each teammate should run `python ctf.py install-hook` once after cloning — git hooks aren't shared by `git clone`.
+
 > **During a live CTF**, keep rough notes in a `notes.md` next to the writeup and save the challenge files into a `files/` folder (servers go offline when the event ends). Tidy into the writeup afterwards.
 
 ## Find a past technique
@@ -45,6 +62,9 @@ grep -rl "ret2libc" --include=README.md .
 
 ## Events
 
-| Event | Date | Solved | Writeups |
-|---|---|---|---|
-| [CyberWeek 2026](2026-cyberweek/) | 2026 | 64 / 65 | 65 challenges across 14 series/categories |
+<!-- AUTO-INDEX:START -->
+| Event | Solved | Status |
+|---|---|---|
+| [CyberWeek 2026](2026-cyberweek-finals/) | 64 / 65 | ✅ finished |
+| [cylabCTF](cylabCTF/) | 1 / 2 | 🔒 live — flags hidden |
+<!-- AUTO-INDEX:END -->

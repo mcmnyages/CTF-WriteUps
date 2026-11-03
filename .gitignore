@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# Real flags of live CTFs (kept only on this machine; see `python ctf.py --help`)
+.flags.local.json

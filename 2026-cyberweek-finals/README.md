@@ -13,7 +13,7 @@ Pick whichever you prefer:
 - **Easiest:** tell Claude *"write up &lt;challenge&gt; for &lt;event&gt;"* — it creates the folder and refreshes the tables.
 - **Yourself:** from the `CTFs/` folder run
   ```
-  python ctf.py new 2026-cyberweek/web/my-challenge
+  python ctf.py new 2026-cyberweek-finals/web/my-challenge
   ```
   fill in the new `README.md`, then run `python ctf.py` to rebuild all the tables. Done. Commit & push.
 

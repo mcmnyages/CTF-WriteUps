@@ -1,10 +1,3 @@
-<!--
-  HOW TO USE THIS FILE
-  - This is the standard shape for EVERY writeup in the repo, so they all look the same.
-  - Fill in the frontmatter block (between the --- lines) — the index tables are built from it.
-  - Replace the <...> placeholders. Delete any OPTIONAL section you don't need.
-  - When done, run `python ctf.py` from the CTFs/ folder to rebuild the indexes.
--->
 ---
 title: "<Challenge Name>"
 event: "<CTF Name> <Year>"
@@ -18,7 +11,17 @@ author: "<your name/handle>"               # who wrote this up (handy in a team 
 date: YYYY-MM-DD
 flag: "FLAG{...}"
 tags: [sqli, idor]                          # techniques — lets you grep later and fills the Tags column
+live: auto                                  # auto = follow the event (LIVE.md) | true = hide flag | false = show flag
 ---
+<!--
+  HOW TO USE THIS FILE
+  - This is the standard shape for EVERY writeup in the repo, so they all look the same.
+  - Fill in the frontmatter block (between the --- lines) — the index tables are built from it.
+  - Replace the <...> placeholders. Delete any OPTIONAL section you don't need.
+  - LIVE CTF? Write the real flag normally; `python ctf.py` hides it automatically.
+  - When done, run `python ctf.py` from the CTFs/ folder to rebuild the indexes.
+-->
+
 
 # <Challenge Name>
 

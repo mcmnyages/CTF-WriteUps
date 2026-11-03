@@ -16,6 +16,8 @@ Lowercase, dashes for spaces. Examples: `2026-some-ctf/web/sneaky-login/`, `2026
 git clone <repo-url> && cd CTFs
 git pull                                   # always start fresh so you don't clash with teammates
 
+python ctf.py install-hook               # once: blocks commits that leak live-CTF flags
+
 # 2. make your writeup folder from the template
 python ctf.py new 2026-some-ctf/web/my-challenge
 
@@ -40,6 +42,9 @@ git push
    - `series` — the series name for chained challenges, else `Standalone`
 2. **The writeup body.** Minimum that's still useful: **TL;DR + Key Insight + Solution + Flag**. Add Background (for beginners), Why It Worked, Takeaways when you have time. Optional Recon / Dead Ends / Solve Script sections are there for pwn/rev/crypto.
 
+## Live CTFs: never commit their flags
+If the event is still running (its folder has a `LIVE.md`), write the real flag as usual — `python ctf.py` hides it before you commit, and the pre-commit hook refuses commits that still contain one. See the README for `live` / `reveal`.
+
 ## Write for two readers
 - A **beginner** on the team should be able to follow it.
 - An **expert** should be able to skim the TL;DR and solution and move on.
@@ -50,4 +55,4 @@ git push
 - Keep rough notes in a `notes.md` next to your writeup while you work; tidy it into the README after.
 - `git pull` before you `push`. If two people added different challenges and git complains, it's almost always a clean auto-merge; if a conflict is in an index table, just run `python ctf.py` again and it regenerates correctly.
 
-That's it. If in doubt, open any existing writeup in `2026-cyberweek/` and copy its shape.
+That's it. If in doubt, open any existing writeup in `2026-cyberweek-finals/` and copy its shape.
