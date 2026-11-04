@@ -1,11 +1,11 @@
 ---
 title: "Stegano1"
-event: "Unknown CTF"
+event: "HBH"
 series: "Standalone"
 category: stego
 difficulty: easy
 points: 15
-status: unsolved
+status: solved
 solved_with: solo
 author: "HBH"
 date: 2026-11-04

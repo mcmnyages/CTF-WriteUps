@@ -67,5 +67,5 @@ grep -rl "ret2libc" --include=README.md .
 |---|---|---|
 | [CyberWeek 2026](2026-cyberweek-finals/) | 64 / 65 | ✅ finished |
 | [cylabCTF](cylabCTF/) | 2 / 3 | 🔒 live — flags hidden |
-| [HellBoundHackers](HellBoundHackers/) | 0 / 1 | 🔒 live — flags hidden |
+| [HellBoundHackers](HellBoundHackers/) | 1 / 1 | 🔒 live — flags hidden |
 <!-- AUTO-INDEX:END -->
